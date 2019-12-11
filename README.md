@@ -17,7 +17,7 @@ Taking a cue from typical image classifier training workflows, we create a test 
 
 These are 160x120 RGB images which are converted to greyscale before they are run through the model for inference.
 
-![](image_set.png)
+![](images/image_set.png)
 
 ### 2) Image Labeling
 
@@ -61,7 +61,7 @@ We generate 2 scores that are related but distinct.
 
 Example plot with [pyplot](https://matplotlib.org/) 
 
-![](nero-session1e.png)
+![](images/nero-session1e.png)
 
 
 
@@ -76,8 +76,8 @@ Full simulations evaluations were 5 lap attempts on the tracks: `reinvent_base`,
 
 | Experiment | Training Progress | Still Image Evaluations (every checkpoint) | Full Simulation Evaluation: Completed Laps (final checkpoint only) |
 |---|---|---|---|
-| Baseline training with default hyperparameters, 5 steering angles at speed 1m/s | ![](nero-session1-progress.png) | ![](nero-session1.png) | **9** (5/1/0/3) || Add alternating directions | ![](nero-session1a-progress.png) | ![](nero-session1a.png) | **13** (5/5/0/3) || 20% image augmentation | ![](nero-session1b-progress.png) | ![](nero-session1b.png) | **6** (2/0/0/4) || Purposely overfitted to `reinvent_carpet` track | ![](nero-session1d-progress.png) | ![](nero-session1d.png) | **9** (2/3/0/4) |
-| Baseline but speed 2m/s | ![](nero-session1e-progress.png) | ![](nero-session1e.png) | **9** (5/0/1/3)|
+| Baseline training with default hyperparameters, 5 steering angles at speed 1m/s | ![](images/nero-session1-progress.png) | ![](images/nero-session1.png) | **9** (5/1/0/3) || Add alternating directions | ![](images/nero-session1a-progress.png) | ![](images/nero-session1a.png) | **13** (5/5/0/3) || 20% image augmentation | ![](images/nero-session1b-progress.png) | ![](images/nero-session1b.png) | **6** (2/0/0/4) || Purposely overfitted to `reinvent_carpet` track | ![](images/nero-session1d-progress.png) | ![](images/nero-session1d.png) | **9** (2/3/0/4) |
+| Baseline but speed 2m/s | ![](images/nero-session1e-progress.png) | ![](images/nero-session1e.png) | **9** (5/0/1/3)|
 
 ### Observations
 
